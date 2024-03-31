@@ -30,7 +30,7 @@ public class TransactionServiceImpl implements TransactionService {
     }
 
 
-    // update the transaction history of the user
+    // update the transaction history of the user in the userHistory map
     private void updateUserHistory(Transaction transaction) {
         String userId = transaction.getUserId();
         Deque<Transaction> userTransactions = userHistory.get(userId);
