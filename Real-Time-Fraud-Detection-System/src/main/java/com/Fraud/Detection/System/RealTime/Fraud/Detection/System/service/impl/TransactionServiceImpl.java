@@ -96,7 +96,7 @@ public class TransactionServiceImpl implements TransactionService {
             // Potential ping-pong activity between two services
             System.out.println("Alert: User " + userId + " might be involved in ping-pong activity!");
         }
-        userTransactions.offerLast(previous); // Add previous transaction back to history
+        userTransactions.offerLast(previous); // Add previous transaction back to history;
     }
 
 
